@@ -23,24 +23,24 @@ if [ -d /usr/local/go1.16 ]; then
 else 
     export GOROOT=/usr/local/go
 fi
-export GOPATH=`pwd`/build
+#export GOPATH=`pwd`/build
 # echo "GOPATH:$GOPATH"
-# if [ ! -d "$GOPATH" ]; then
-#     pushd $(dirname ${workspace})
-#     if [ ! -d "build" ]; then
-#         mkdir -p "build"
-#     fi
-#     cd build
-#     export GOPATH="$PWD"
-#     echo "GOPATH:$GOPATH"
-#     popd
-# fi
-# if [ ! -d "$GOPATH/src/" ]; then
-#     mkdir -p "$GOPATH/src/"
-# fi
-# ln -sf "${workspace}" "$GOPATH/src/automl-go"
-# cd "${workspace}"
-# export PATH=${GOROOT}/bin:$GOPATH/bin:${PATH}:$GOBIN
+if [ ! -d "$GOPATH" ]; then
+    pushd $(dirname ${workspace})
+    if [ ! -d "build" ]; then
+        mkdir -p "build"
+    fi
+    cd build
+    export GOPATH="$PWD"
+    echo "GOPATH:$GOPATH"
+    popd
+fi
+if [ ! -d "$GOPATH/src/" ]; then
+    mkdir -p "$GOPATH/src/"
+fi
+ln -sf "${workspace}" "$GOPATH/src/automl-go"
+cd "${workspace}"
+export PATH=${GOROOT}/bin:$GOPATH/bin:${PATH}:$GOBIN
 
 go clean -modcache
 go mod vendor
