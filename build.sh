@@ -35,10 +35,10 @@ if [ ! -d "$GOPATH" ]; then
     echo "GOPATH:$GOPATH"
     popd
 fi
-if [ ! -d "$GOPATH/src/" ]; then
-    mkdir -p "$GOPATH/src/"
+if [ ! -d "$GOPATH/src/github.com/Damon259/automl-go" ]; then
+    mkdir -p "$GOPATH/src/github.com/Damon259/automl-go"
 fi
-ln -sf "${workspace}" "$GOPATH/src/automl-go"
+ln -sf "${workspace}" "$GOPATH/src/github.com/Damon259/automl-go"
 cd "${workspace}"
 export PATH=${GOROOT}/bin:$GOPATH/bin:${PATH}:$GOBIN
 
