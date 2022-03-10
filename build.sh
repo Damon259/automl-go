@@ -35,8 +35,8 @@ if [ ! -d "$GOPATH" ]; then
     echo "GOPATH:$GOPATH"
     popd
 fi
-if [ ! -d "$GOPATH/src/github.com/Damon259/automl-go" ]; then
-    mkdir -p "$GOPATH/src/github.com/Damon259/automl-go"
+if [ ! -d "$GOPATH/src/github.com/Damon259" ]; then
+    mkdir -p "$GOPATH/src/github.com/Damon259"
 fi
 ln -sf "${workspace}" "$GOPATH/src/github.com/Damon259/automl-go"
 cd "${workspace}"
