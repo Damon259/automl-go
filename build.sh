@@ -45,7 +45,7 @@ export GOPATH=`pwd`/build
 go clean -modcache
 go mod vendor
 rm -rf "automl-go"
-go build -o "automl-go" main.go
+go build -o "automl-go" "github.com/Damon259/automl-go"
 mv automl-go bin/
 
 if [[ $? != 0 ]]; then
