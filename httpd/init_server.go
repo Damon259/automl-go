@@ -1,3 +1,8 @@
+/*
+ * @author: 宋先生～
+ * @brief:
+ * @date:
+ */
 /**
  ** @brief 初始化系统框架,启动服务
  ** @author 宋先生～
@@ -7,10 +12,12 @@
 package httpd
 
 import (
-	"github.com/Damon259/automl-go/components"
-	srouter "github.com/Damon259/automl-go/controller"
-	"github.com/gin-gonic/gin"
+	"automl-go/components"
 	"time"
+
+	srouter "automl-go/controller"
+
+	"github.com/gin-gonic/gin"
 )
 
 /**

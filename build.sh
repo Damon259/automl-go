@@ -1,4 +1,9 @@
 #!/bin/bash
+###
+ # @author: 宋先生～
+ # @brief: 
+ # @date: 
+### 
 
 workspace=$(cd $(dirname $0) && pwd -P)
 cd ${workspace}
@@ -45,7 +50,7 @@ export PATH=${GOROOT}/bin:$GOPATH/bin:${PATH}:$GOBIN
 go clean -modcache
 go mod vendor
 rm -rf "automl-go"
-go build -o "automl-go" "github.com/Damon259/automl-go"
+go build -o "automl-go" "automl-go"
 mv automl-go bin/
 
 if [[ $? != 0 ]]; then

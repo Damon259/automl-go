@@ -1,9 +1,4 @@
 /*
- * @author: 宋先生～
- * @brief:
- * @date:
- */
-/*
  * 解决程序有多个信号量问题,且需要等待全部执行完成
  */
 package components
