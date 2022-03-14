@@ -28,8 +28,7 @@ if [ -d /usr/local/go1.16 ]; then
 else 
     export GOROOT=/usr/local/go
 fi
-#export GOPATH=`pwd`/build
-# echo "GOPATH:$GOPATH"
+
 if [ ! -d "$GOPATH" ]; then
     pushd $(dirname ${workspace})
     if [ ! -d "build" ]; then
@@ -40,10 +39,10 @@ if [ ! -d "$GOPATH" ]; then
     echo "GOPATH:$GOPATH"
     popd
 fi
-if [ ! -d "$GOPATH/src/github.com/Damon259" ]; then
-    mkdir -p "$GOPATH/src/github.com/Damon259"
+if [ ! -d "$GOPATH/src/" ]; then
+    mkdir -p "$GOPATH/src/"
 fi
-ln -sf "${workspace}" "$GOPATH/src/github.com/Damon259/automl-go"
+ln -sf "${workspace}" "$GOPATH/src/automl-go"
 cd "${workspace}"
 export PATH=${GOROOT}/bin:$GOPATH/bin:${PATH}:$GOBIN
 
