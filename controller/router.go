@@ -1,8 +1,3 @@
-/*
- * @author: 宋先生～
- * @brief:
- * @date:
- */
 /**
  ** @brief 路由注册入口
  ** @author 宋先生～

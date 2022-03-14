@@ -1,8 +1,3 @@
-/*
- * @author: 宋先生～
- * @brief:
- * @date:
- */
 /**
  ** @brief 初始化系统框架,启动服务
  ** @author 宋先生～

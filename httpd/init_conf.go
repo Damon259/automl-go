@@ -1,8 +1,3 @@
-/*
- * @author: 宋先生～
- * @brief:
- * @date:
- */
 /**
  ** @brief 全局配置初始化
  ** @author 宋先生～
